@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px solid black">
+        <tr>
+            <th>Name</th>
+            <th>Roll No.</th>
+            <th>WAD Marks</th>
+            <th>DSBDA Marks</th>
+            <th>CC Marks</th>
+            <th>CNS Marks</th>
+            <th>AI Marks</th>
+        </tr>
+        <% students.forEach((student)=> { %>
+            <tr>
+                <td>
+                    <%= student.name %>
+                </td>
+                <td>
+                    <%= student.roll_no %>
+                </td>
+                <td>
+                    <%= student.WAD_marks %>
+                </td>
+                <td>
+                    <%= student.DSBDA_marks %>
+                </td>
+                <td>
+                    <%= student.CC_marks %>
+                </td>
+                <td>
+                    <%= student.CNS_marks %>
+                </td>
+                <td>
+                    <%= student.AI_marks %>
+                </td>
+
+            </tr>
+        <% }) %>
+    </table>
+</body>
+</html>
